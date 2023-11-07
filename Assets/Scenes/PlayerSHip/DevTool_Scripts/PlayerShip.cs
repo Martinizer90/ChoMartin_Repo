@@ -7,6 +7,8 @@ public class PlayerShip : MonoBehaviour
     [SerializeField] float _moveSpeed = 12f;
     [SerializeField] float _turnSpeed = 3;
 
+    [SerializeField] Vector3 respawnPoint;
+
     Rigidbody _rb = null;
 
     private void Awake()
@@ -33,5 +35,21 @@ public class PlayerShip : MonoBehaviour
         float turnAmountThisFrame = Input.GetAxisRaw("Horizontal") * _turnSpeed;
         Quaternion turnOffset = Quaternion.Euler(0, turnAmountThisFrame, 0);
         _rb.MoveRotation(_rb.rotation * turnOffset);
+    }
+
+    public void SetMoveSpeed(float newSpeedAdjustment)
+    {
+        _moveSpeed += newSpeedAdjustment;
+    }
+
+    public void SetNewRespawn(Vector3 newRespawnPoint)
+    {
+
+    }
+
+    public void Kill()
+    {
+        // move player back to respawn point
+        this.gameObject.SetActive(false);
     }
 }
