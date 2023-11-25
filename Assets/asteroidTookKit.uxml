@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="Container" style="justify-content: center; flex-basis: 20%; align-items: center; padding-left: 15px; padding-right: 15px; background-color: rgba(0, 0, 0, 0.31); flex-direction: row; padding-top: 5px; flex-shrink: 1; flex-wrap: nowrap; top: 565px;">
+            <ui:Button text="Player ship" display-tooltip-when-elided="true" style="width: 215px; height: 50px; font-size: 24px;" />
+            <ui:Button text="Hazard" display-tooltip-when-elided="true" style="font-size: 24px; width: 150px; height: 50px;" />
+            <ui:Button text="Points" display-tooltip-when-elided="true" style="width: 175px; height: 50px; font-size: 24px;" />
+            <ui:Button text="Power Up" display-tooltip-when-elided="true" style="width: 175px; height: 50px; font-size: 24px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
