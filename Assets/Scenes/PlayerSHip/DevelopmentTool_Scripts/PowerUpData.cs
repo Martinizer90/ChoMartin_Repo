@@ -5,8 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="PowerUpData_", menuName = "UnitData/SpeedPowerUp")]
 public class PowerUpData : ScriptableObject
 {
-    [SerializeField]
-    private PowerUpData _data;
     [Header("General Stats")]
     [SerializeField]
     private PowerUpType _powerupType = PowerUpType.Powerup_Normal;
@@ -19,12 +17,8 @@ public class PowerUpData : ScriptableObject
     [SerializeField][Range(1,30)][Tooltip("Change the duration time when collide with the playerShip")]
     private float _Duration;
 
-    [SerializeField]
-    private GameObject _artToDisable = null;
 
-    private Collider _collider;
-
-    private PowerUpType PowerType => _powerupType;
-    private float SpeedIncreaseAmount => _speedIncreaseAmount;
-    private float Duration => _Duration;
+    public PowerUpType PowerType => _powerupType;
+    public float SpeedIncreaseAmount => _speedIncreaseAmount;
+    public float Duration => _Duration;
 }

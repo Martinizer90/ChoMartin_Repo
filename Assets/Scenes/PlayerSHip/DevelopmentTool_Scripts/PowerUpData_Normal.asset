@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75745ca741bc03b4193dfb94caaa67ec, type: 3}
   m_Name: PowerUpData_Normal
   m_EditorClassIdentifier: 
-  _data: {fileID: 0}
   _powerupType: 1
-  _speedIncreaseAmount: 10
+  _speedIncreaseAmount: 5
   _Duration: 20
   _artToDisable: {fileID: 0}
