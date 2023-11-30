@@ -8,9 +8,18 @@ using UnityEngine;
 public class SpeedPowerUp : MonoBehaviour
 {
     [SerializeField]
-    private float _speedIncreaseAmount = 20;
+    private PowerUpData _data;
+    [Header("General Stats")]
     [SerializeField]
-    private float _powerupDuration = 3;
+    private PowerUpType _powerupType = PowerUpType.Powerup_Normal;
+
+    [SerializeField]
+    [Tooltip("Type the number of playership's speed when collide")]
+    private float _speedIncreaseAmount = 20;
+
+    [Header("Power Up Stats")]
+    [SerializeField][Range(1,30)][Tooltip("Change the duration time when collide with the playerShip")]
+    private float _Duration;
 
     [SerializeField]
     private GameObject _artToDisable = null;
@@ -20,6 +29,14 @@ public class SpeedPowerUp : MonoBehaviour
     private void Awake()
     {
         _collider = GetComponent<Collider>();
+        if(_powerupType == PowerUpType.Powerup_Normal)
+        {
+            Debug.Log("Normal power up activated");
+        }
+        if (_powerupType == PowerUpType.Powerup_Fast)
+        {
+            Debug.Log("Fast power up activated");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,7 +65,7 @@ public class SpeedPowerUp : MonoBehaviour
         ActivatePowerUp(playerShip);
 
         // wait for some aount of time
-        yield return new WaitForSeconds(_powerupDuration);
+        yield return new WaitForSeconds(_Duration);
 
         // deactivate
         DeactivatePowerUp(playerShip);
