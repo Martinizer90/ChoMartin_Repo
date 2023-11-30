@@ -7,9 +7,24 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class SpeedPowerUp : MonoBehaviour
 {
-
     [SerializeField]
     private PowerUpData _data;
+
+    [Header("General Stats")]
+    [SerializeField]
+    private PowerUpType _powerupType = PowerUpType.None;
+
+    [SerializeField]
+    [Tooltip("Type the number of playership's speed when collide")]
+    [Range(5, 30)]
+    private float _speedIncreaseAmount;
+
+    [Header("Power Up Stats")]
+    [SerializeField][Range(1,30)][Tooltip("Change the duration time when collide with the playerShip")]
+    private float _Duration;
+
+    [SerializeField]
+    private GameObject _artToDisable = null;
 
     private Collider _collider;
 
