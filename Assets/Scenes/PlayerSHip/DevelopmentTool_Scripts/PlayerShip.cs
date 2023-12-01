@@ -7,6 +7,10 @@ public class PlayerShip : MonoBehaviour
     [SerializeField] float _moveSpeed = 12f;
     [SerializeField] float _turnSpeed = 3;
 
+    public Transform _bulletSpawnPoint;
+    public GameObject _bulletPrefab;
+    public float _bulletSpeed = 10;
+
     Rigidbody _rb = null;
 
     private void Awake()
@@ -38,5 +42,14 @@ public class PlayerShip : MonoBehaviour
     public void SetMoveSpeed(float newSpeedAdjustment)
     {
         _moveSpeed += newSpeedAdjustment;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            var bullet = Instantiate(_bulletPrefab, _bulletSpawnPoint.position, _bulletSpawnPoint.rotation);
+            bullet.GetComponent<Rigidbody>().velocity = _bulletSpawnPoint.forward * _bulletSpeed;
+        }
     }
 }
