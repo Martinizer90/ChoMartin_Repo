@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
-    [SerializeField] float _moveSpeed = 12f;
+    [Header("Player General States")]
+    [Tooltip("Playership will move when typing negative numbers")]
+    [SerializeField] float _moveSpeed = -35f;
+    [Tooltip("Adjust the speed for turning the Playership")]
     [SerializeField] float _turnSpeed = 3;
 
     public Transform _bulletSpawnPoint;

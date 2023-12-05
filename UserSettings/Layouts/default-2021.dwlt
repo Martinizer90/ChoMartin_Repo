@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 52
+  controlID: 17
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 53
+  controlID: 69
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 106
+  controlID: 56
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,28 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+    - Assets/Scenes
     - Assets/Scenes/PlayerShip
+    - Assets/Scenes/PlayerShip/Materials
+    - Assets/Scenes/PlayerShip/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+  - Assets/Scenes
   - Assets/Scenes/PlayerShip
+  - Assets/Scenes/PlayerShip/Materials
+  - Assets/Scenes/PlayerShip/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\marti\Desktop\ChoMartin_Project03\Project03A
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e580000
-    m_LastClickedID: 22542
-    m_ExpandedIDs: 00000000fc570000fe570000085800000e58000000ca9a3b
+    m_SelectedIDs: 285800002e5800002c58000032580000
+    m_LastClickedID: 22574
+    m_ExpandedIDs: 000000001c5800001e580000285800002e58000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +366,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc570000fe570000
+    m_ExpandedIDs: 000000001c5800001e580000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +393,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -449,7 +455,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fafaffff38fbffff4a570000
+      m_ExpandedIDs: 38fbffff52570000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -465,7 +471,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 3}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -698,9 +704,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.6842613, y: 3.786773, z: -4.9858284}
+    m_Target: {x: 6.0586615, y: 2.507823, z: -4.2302938}
     speed: 2
-    m_Value: {x: 5.6842613, y: 3.786773, z: -4.9858284}
+    m_Value: {x: 6.0586615, y: 2.507823, z: -4.2302938}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -747,9 +753,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.13592418, y: 0.82434046, z: -0.22310193, w: -0.50223684}
+    m_Target: {x: -0.13429241, y: 0.8194437, z: -0.21388415, w: -0.5145508}
     speed: 2
-    m_Value: {x: -0.13625671, y: 0.8235743, z: -0.22289458, w: -0.50346553}
+    m_Value: {x: -0.1342903, y: 0.8194308, z: -0.21388078, w: -0.5145427}
   m_Size:
     m_Target: 10
     speed: 2

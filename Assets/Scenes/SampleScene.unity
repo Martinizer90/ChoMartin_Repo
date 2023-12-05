@@ -470,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedPowerUp (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8982012796331629199, guid: 5e44ecde94eb2a442be8e7961201c68c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 614bbfd3cfc22d44795588ee61d5a6f2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e44ecde94eb2a442be8e7961201c68c, type: 3}
 --- !u!1 &705507993
@@ -761,6 +765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedPowerUp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8982012796331629199, guid: 5e44ecde94eb2a442be8e7961201c68c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f740cd19c914974e8f27f8f928fbda2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e44ecde94eb2a442be8e7961201c68c, type: 3}
 --- !u!1 &1866298778

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    [Header("Bullet General Stats")]
     public float life = 3;
 
     void Awake()
